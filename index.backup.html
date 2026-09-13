@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1345,15 +1345,15 @@
             <div class="nav">
 
                 <button class="active" onclick="showHome()">
-                    ðŸ  <span>Home</span>
+                    🏠 <span>Home</span>
                 </button>
 
                 <button onclick="focusSearch()">
-                    ðŸ”Ž <span>Search</span>
+                    🔎 <span>Search</span>
                 </button>
 
                 <button onclick="showLibrary()">
-                    ðŸ“š <span>Library</span>
+                    📚 <span>Library</span>
                 </button>
 
             </div>
@@ -1363,11 +1363,11 @@
             <div class="nav">
 
                 <button onclick="showFavorites()">
-                    â¤ï¸ <span>Favorites</span>
+                    ❤️ <span>Favorites</span>
                 </button>
 
                 <button onclick="showPlaylists()">
-                    ðŸŽµ <span>Playlists</span>
+                    🎵 <span>Playlists</span>
                 </button>
 
             </div>
@@ -1386,7 +1386,7 @@
 
                 <div class="search">
 
-                    <div class="search-icon">âŒ•</div>
+                    <div class="search-icon">⌕</div>
 
                     <input id="searchInput" placeholder="Search songs, artists..." autocomplete="off"
                         oninput="searchSongs()">
@@ -1394,7 +1394,7 @@
                 </div>
 
                 <button class="import-btn" onclick="document.getElementById('fileInput').click()">
-                    ï¼‹ Import Music
+                    ＋ Import Music
                 </button>
 
                 <input id="fileInput" type="file" accept="audio/*" multiple hidden onchange="importMusic(event)">
@@ -1422,7 +1422,7 @@
                     <div class="hero-actions">
 
                         <button class="primary-btn" onclick="importButton()">
-                            ï¼‹ Add Music
+                            ＋ Add Music
                         </button>
 
                         <button class="secondary-btn" onclick="showLibrary()">
@@ -1491,7 +1491,7 @@
                     <h2>Your Playlists</h2>
 
                     <button class="primary-btn" onclick="openPlaylistModal()">
-                        ï¼‹ New Playlist
+                        ＋ New Playlist
                     </button>
 
                 </div>
@@ -1514,7 +1514,7 @@
             color:var(--accent2);
             margin-bottom:10px;
           ">
-                            â† Back
+                            ← Back
                         </button>
 
                         <h2 id="playlistDetailTitle"></h2>
@@ -1540,27 +1540,27 @@
     <div class="mobile-nav">
 
         <button onclick="showHome()">
-            <span>âŒ‚</span>
+            <span>⌂</span>
             Home
         </button>
 
         <button onclick="focusSearch()">
-            <span>âŒ•</span>
+            <span>⌕</span>
             Search
         </button>
 
         <button onclick="showLibrary()">
-            <span>â™«</span>
+            <span>♫</span>
             Library
         </button>
 
         <button onclick="showFavorites()">
-            <span>â™¡</span>
+            <span>♡</span>
             Favorites
         </button>
 
         <button onclick="showPlaylists()">
-            <span>â˜·</span>
+            <span>☷</span>
             Lists
         </button>
 
@@ -1573,7 +1573,7 @@
         <div class="now-playing" onclick="openNowPlaying()">
 
             <div class="mini-cover" id="miniCover">
-                â™«
+                ♫
             </div>
 
             <div class="now-text">
@@ -1595,23 +1595,23 @@
             <div class="control-buttons">
 
                 <button onclick="previousSong()">
-                    â®
+                    ⏮
                 </button>
 
                 <button onclick="toggleShuffle()" id="shuffleBtn">
-                    ðŸ”€
+                    🔀
                 </button>
 
                 <button class="play" onclick="togglePlay()" id="playBtn">
-                    â–¶
+                    ▶
                 </button>
 
                 <button onclick="toggleRepeat()" id="repeatBtn">
-                    ðŸ”
+                    🔁
                 </button>
 
                 <button onclick="nextSong()">
-                    â­
+                    ⏭
                 </button>
 
             </div>
@@ -1634,7 +1634,7 @@
 
         <div class="right-controls">
 
-            <span>ðŸ”Š</span>
+            <span>🔊</span>
 
             <input id="volume" type="range" min="0" max="1" step=".01" value=".8" oninput="changeVolume()">
 
@@ -1649,15 +1649,15 @@
         <div class="now-top">
 
             <button onclick="closeNowPlaying()">
-                Ã—
+                ×
             </button>
 
             <div class="now-title-small">
-                NEXUS MUSIC â€¢ NOW PLAYING
+                NEXUS MUSIC • NOW PLAYING
             </div>
 
             <button onclick="toggleFavoriteCurrent()" id="topHeart">
-                â™¡
+                ♡
             </button>
 
         </div>
@@ -1667,7 +1667,7 @@
             <div class="art-section">
 
                 <div id="bigArt" class="big-art">
-                    â™«
+                    ♫
                 </div>
 
                 <div id="visualizer" class="visualizer"></div>
@@ -1683,7 +1683,7 @@
                     </div>
 
                     <button id="largeHeart" class="large-heart" onclick="toggleFavoriteCurrent()">
-                        â™¡
+                        ♡
                     </button>
 
                 </div>
@@ -1710,23 +1710,23 @@
                 <div class="big-controls">
 
                     <button onclick="previousSong()">
-                        â®
+                        ⏮
                     </button>
 
                     <button onclick="toggleShuffle()">
-                        ðŸ”€
+                        🔀
                     </button>
 
                     <button id="bigPlay" class="big-play" onclick="togglePlay()">
-                        â–¶
+                        ▶
                     </button>
 
                     <button onclick="toggleRepeat()">
-                        ðŸ”
+                        🔁
                     </button>
 
                     <button onclick="nextSong()">
-                        â­
+                        ⏭
                     </button>
 
                 </div>
@@ -1734,11 +1734,11 @@
                 <div class="extra-controls">
 
                     <button onclick="changePlaybackRate(-1)">
-                        Speed âˆ’
+                        Speed −
                     </button>
 
                     <button id="speedButton">
-                        1Ã—
+                        1×
                     </button>
 
                     <button onclick="changePlaybackRate(1)">
@@ -1817,7 +1817,7 @@
 
         <div class="drop-box">
 
-            <div>ðŸŽµ</div>
+            <div>🎵</div>
 
             <h2>DROP MUSIC HERE</h2>
 
@@ -2095,7 +2095,7 @@
                 document.getElementById(
                     "speedButton"
                 ).textContent =
-                    rate + "Ã—";
+                    rate + "×";
 
             }
 
@@ -2251,7 +2251,7 @@
 
             return `
     <div class="${className}">
-      â™«
+      ♫
     </div>
   `;
 
@@ -2447,7 +2447,7 @@
       >
 
         <div class="empty-icon">
-          ðŸŽµ
+          🎵
         </div>
 
         <h3>
@@ -2490,7 +2490,7 @@
 
           ${cover
                             ? `<img src="${cover}" alt="">`
-                            : "â™«"
+                            : "♫"
                         }
 
         </div>
@@ -2499,7 +2499,7 @@
           class="card-play"
           title="Play"
         >
-          â–¶
+          ▶
         </button>
 
         <div class="card-title">
@@ -2536,7 +2536,7 @@
       <div class="empty">
 
         <div class="empty-icon">
-          ðŸŽ§
+          🎧
         </div>
 
         <p>
@@ -2572,7 +2572,7 @@
 
         ${cover
                         ? `<img src="${cover}" alt="">`
-                        : "â™«"
+                        : "♫"
                     }
 
       </div>
@@ -2590,7 +2590,7 @@
       </div>
 
       <div class="song-duration">
-        â€”
+        —
       </div>
 
       <button
@@ -2600,8 +2600,8 @@
                     }"
       >
         ${song.favorite
-                        ? "â™¥"
-                        : "â™¡"
+                        ? "♥"
+                        : "♡"
                     }
       </button>
 
@@ -2609,14 +2609,14 @@
         class="icon-btn add-song-btn"
         title="Add to playlist"
       >
-        ï¼‹
+        ＋
       </button>
 
       <button
         class="icon-btn delete-song-btn"
         title="Remove"
       >
-        ðŸ—‘
+        🗑
       </button>
 
     `;
@@ -2794,7 +2794,7 @@
       >
 
         <div class="empty-icon">
-          ðŸŽµ
+          🎵
         </div>
 
         <h3>
@@ -2826,7 +2826,7 @@
                 card.innerHTML = `
 
       <div class="playlist-art">
-        â™«
+        ♫
       </div>
 
       <div class="playlist-name">
@@ -2875,7 +2875,7 @@
                         );
 
                     btn.innerHTML =
-                        `ðŸŽµ <span>${esc(name)}</span>`;
+                        `🎵 <span>${esc(name)}</span>`;
 
                     btn.onclick =
                         () => openPlaylist(name);
@@ -3074,7 +3074,7 @@
                     button.style.textAlign = "left";
 
                     button.textContent =
-                        `ðŸŽµ ${name}`;
+                        `🎵 ${name}`;
 
                     button.onclick =
                         () => {
@@ -3251,9 +3251,9 @@
 
             } else {
 
-                mini.innerHTML = "â™«";
+                mini.innerHTML = "♫";
 
-                big.innerHTML = "â™«";
+                big.innerHTML = "♫";
 
             }
 
@@ -3284,11 +3284,11 @@
 
             document.getElementById(
                 "miniCover"
-            ).innerHTML = "â™«";
+            ).innerHTML = "♫";
 
             document.getElementById(
                 "bigArt"
-            ).innerHTML = "â™«";
+            ).innerHTML = "♫";
 
             updatePlayButton();
 
@@ -3333,8 +3333,8 @@
 
             const symbol =
                 audio.paused
-                    ? "â–¶"
-                    : "â…¡";
+                    ? "▶"
+                    : "Ⅱ";
 
             document.getElementById(
                 "playBtn"
@@ -3688,8 +3688,8 @@
 
             const symbols =
                 active
-                    ? "â™¥"
-                    : "â™¡";
+                    ? "♥"
+                    : "♡";
 
             document.getElementById(
                 "largeHeart"
@@ -3803,7 +3803,7 @@
                 item.innerHTML = `
 
       <div class="queue-number">
-        â–¶
+        ▶
       </div>
 
       <div class="queue-name">
@@ -3900,7 +3900,7 @@
             document.getElementById(
                 "speedButton"
             ).textContent =
-                playbackRate + "Ã—";
+                playbackRate + "×";
 
             saveSettings();
 
@@ -4495,117 +4495,7 @@
 
     </script>
 
-<style>
-.spotify-actions{
-display:flex;
-gap:10px;
-margin-top:18px;
-flex-wrap:wrap;
-}
-.spotify-btn{
-border:1px solid rgba(30,215,96,.35);
-background:rgba(30,215,96,.12);
-color:#1ed760;
-padding:10px 15px;
-border-radius:11px;
-font-weight:600;
-cursor:pointer;
-transition:.2s;
-}
-.spotify-btn:hover{
-background:rgba(30,215,96,.22);
-transform:translateY(-2px);
-}
-.spotify-btn.secondary{
-border-color:rgba(255,255,255,.1);
-background:rgba(255,255,255,.05);
-color:#fff;
-}
-.spotify-btn.secondary:hover{
-background:rgba(255,255,255,.1);
-}
-</style><div class="spotify-actions" id="spotifyActions" style="display:none">
-<button class="spotify-btn" onclick="openCurrentSpotify()">🟢 Open in Spotify</button>
-<button class="spotify-btn secondary" onclick="searchCurrentSpotify()">🔎 Search Spotify</button>
-</div><script>
-function spotifyQuery(){
-    if(currentIndex < 0 || !songs[currentIndex]){
-        toast("Play a song first");
-        return "";
-    }
-
-    const song = songs[currentIndex];
-    return encodeURIComponent(song.name + " " + song.artist);
-}
-
-function openCurrentSpotify(){
-    const query = spotifyQuery();
-    if(!query) return;
-
-    window.open(
-        "https://open.spotify.com/search/" + query,
-        "_blank",
-        "noopener,noreferrer"
-    );
-
-    toast("Opening Spotify");
-}
-
-function searchCurrentSpotify(){
-    const query = spotifyQuery();
-    if(!query) return;
-
-    window.open(
-        "https://open.spotify.com/search/" + query,
-        "_blank",
-        "noopener,noreferrer"
-    );
-
-    toast("Searching Spotify");
-}
-
-function createSpotifyActions(){
-    if(document.getElementById("spotifyActions")) return;
-
-    const box = document.createElement("div");
-    box.id = "spotifyActions";
-    box.className = "spotify-actions";
-    box.innerHTML = `
-        <button class="spotify-btn"
-                onclick="openCurrentSpotify()">
-            🟢 Open in Spotify
-        </button>
-        <button class="spotify-btn secondary"
-                onclick="searchCurrentSpotify()">
-            🔎 Search Spotify
-        </button>
-    `;
-
-    const info = document.querySelector(".song-info-large");
-
-    if(info){
-        info.appendChild(box);
-    }
-}
-
-const originalLoadSong = window.loadSong;
-
-window.loadSong = function(index){
-    originalLoadSong(index);
-    setTimeout(createSpotifyActions,100);
-};
-
-const originalUpdateNowPlaying = window.updateNowPlaying;
-
-window.updateNowPlaying = function(){
-    originalUpdateNowPlaying();
-    createSpotifyActions();
-};
-
-document.addEventListener("DOMContentLoaded",function(){
-    createSpotifyActions();
-});
-</script></body>
+</body>
 
 </html>
 ```
